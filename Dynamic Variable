@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main() {
+    int* ptr = new int; 
+    
+    *ptr = 42;
+    
+    std::cout << "The value stored at the dynamically allocated memory: " << *ptr << std::endl;
+    std::cout << "The address of the dynamically allocated memory: " << ptr << std::endl;
+
+    delete ptr;
+
+    ptr = nullptr;
+
+    return 0;
+}
